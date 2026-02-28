@@ -1,0 +1,91 @@
+{
+  "train_rows": 34372,
+  "test_rows": 8492,
+  "features": [
+    "B2_mean",
+    "B2_std",
+    "B3_mean",
+    "B3_std",
+    "B4_mean",
+    "B4_std",
+    "B8_mean",
+    "B8_std",
+    "NDVI_mean",
+    "NDVI_std",
+    "NDWI_mean",
+    "NDWI_std",
+    "EVI_mean",
+    "EVI_std",
+    "GNDVI_mean",
+    "GNDVI_std",
+    "comp_built_up_2020",
+    "comp_water_2020",
+    "comp_vegetation_2020",
+    "comp_other_2020"
+  ],
+  "composition_metrics": {
+    "overall": {
+      "mae": 0.009991428855135908,
+      "rmse": 0.032619468082546364,
+      "r2": 0.9689299296842289
+    },
+    "per_target": {
+      "comp_built_up_2021": {
+        "mae": 0.016531045097910778,
+        "rmse": 0.03906470521557539,
+        "r2": 0.9866958198818101
+      },
+      "comp_water_2021": {
+        "mae": 0.0010264466955774005,
+        "rmse": 0.013636459578625842,
+        "r2": 0.9154636400925948
+      },
+      "comp_vegetation_2021": {
+        "mae": 0.01857660956155464,
+        "rmse": 0.0426469630263572,
+        "r2": 0.9873535955437239
+      },
+      "comp_other_2021": {
+        "mae": 0.003831614065500819,
+        "rmse": 0.026932343254203964,
+        "r2": 0.9862066632187869
+      }
+    }
+  },
+  "delta_metrics": {
+    "overall": {
+      "mae": 0.009991428855135908,
+      "rmse": 0.032619468082546364,
+      "r2": 0.4134518736548366
+    },
+    "per_target": {
+      "delta_comp_built_up": {
+        "mae": 0.016531045097910778,
+        "rmse": 0.03906470521557539,
+        "r2": 0.19401763318850496
+      },
+      "delta_comp_water": {
+        "mae": 0.0010264466955774005,
+        "rmse": 0.013636459578625842,
+        "r2": 0.1012425895573702
+      },
+      "delta_comp_vegetation": {
+        "mae": 0.01857660956155464,
+        "rmse": 0.0426469630263572,
+        "r2": 0.595117247281087
+      },
+      "delta_comp_other": {
+        "mae": 0.003831614065500819,
+        "rmse": 0.026932343254203964,
+        "r2": 0.7634300245923842
+      }
+    }
+  },
+  "change_specific_metrics": {
+    "threshold": 0.05,
+    "false_positive_rate": 0.04788985333732416,
+    "false_negative_rate": 0.40607734806629836,
+    "stability_accuracy": 0.9521101466626758,
+    "change_prevalence": 0.21314178049929344
+  }
+}
